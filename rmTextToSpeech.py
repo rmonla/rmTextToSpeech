@@ -1,0 +1,31 @@
+# Copyright (c) 2023 Lic. Ricardo MONLA, rmonla@gmail.com
+# Este código está licenciado bajo la licencia de código libre. 
+
+
+from gtts import gTTS
+import json
+
+# Leer archivo json con las preguntas y respuestas
+with open('rmTextToSpeech.json', 'r') as f:
+    preguntas = json.load(f)
+
+# Crear variable contador
+contador = 1
+
+# Iterar sobre las preguntas y crear archivo de audio para cada pregunta
+for pregunta in preguntas:
+    texto_pregunta = pregunta['pregunta']
+    texto_respuesta = pregunta['respuesta']
+    
+    # Concatenar pregunta y respuesta
+    texto_pregunta_respuesta = f"{texto_pregunta}. {texto_respuesta}"
+
+    # Crear objeto gTTS con la pregunta y respuesta concatenadas
+    tts_pregunta_respuesta = gTTS(text=texto_pregunta_respuesta, lang='es')
+
+    # Guardar archivo de audio con el nombre secuencial
+    nombre_archivo = "pregunta_{:02d}.mp3".format(contador)
+    tts_pregunta_respuesta.save(nombre_archivo)
+    
+    # Incrementar contador
+    contador += 1
