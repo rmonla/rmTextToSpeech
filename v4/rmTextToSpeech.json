@@ -1,0 +1,14 @@
+[
+    {
+        "pregunta": "¿Qué es la inteligencia artificial?",
+        "respuesta": "La inteligencia artificial (IA) es una rama de la informática que busca desarrollar algoritmos y sistemas que puedan realizar tareas que requieren inteligencia humana, como la toma de decisiones, el reconocimiento de patrones, el aprendizaje y la resolución de problemas."
+    },
+    {
+        "pregunta": "¿Cómo está afectando la IA al mercado laboral?",
+        "respuesta": "La IA está cambiando el mercado laboral al automatizar tareas repetitivas y procesos complejos. Esto puede llevar a la eliminación de algunos trabajos, pero también puede crear nuevos empleos en áreas relacionadas con la IA, como la programación, la ingeniería de datos y la ciberseguridad."
+    },
+    {
+        "pregunta": "¿Qué tipos de trabajos están siendo más afectados por la IA?",
+        "respuesta": "Los trabajos que implican tareas repetitivas y procesos estandarizados, como los trabajos en la industria manufacturera y la logística, son los más afectados por la IA. También se están viendo afectados trabajos en la atención al cliente, en la banca y en la contabilidad."
+    }
+]
